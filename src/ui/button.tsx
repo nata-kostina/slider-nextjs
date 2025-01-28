@@ -40,6 +40,7 @@ export default function Button({
                     height={28}
                     alt={alt ?? ""}
                     className="ml-[1.6rem]"
+                    loading="eager"
                 />
             )}
         </button>

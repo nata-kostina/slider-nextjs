@@ -21,6 +21,7 @@ export default function Slide({
                 width={60}
                 height={60}
                 alt="Услуга"
+                loading="eager"
                 className="block h-[6rem] w-[6rem] md:h-[8rem] md:w-[8rem]"
             />
             <Text variant="h3" dangerouslySetInnerHTML={{ __html: title }} />

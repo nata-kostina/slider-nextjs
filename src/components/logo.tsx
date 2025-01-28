@@ -11,6 +11,7 @@ export default function Logo() {
                     width={28}
                     height={28}
                     alt="Logo"
+                    loading="eager"
                 />
                 <Text variant="h1" className="ml-[1.6rem] hidden md:block">
                     STEMPS
