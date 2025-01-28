@@ -26,7 +26,10 @@ export default function AppLink({
     return (
         <Link
             href={hrefTo}
-            className={cl([`block w-fit focus:outline-none ${twClasses}`, className ?? ""])}
+            className={cl([
+                `block w-fit focus:outline-none ${twClasses}`,
+                className ?? ""
+            ])}
             {...props}
         >
             {children}

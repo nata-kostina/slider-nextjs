@@ -12,7 +12,9 @@ export default function Logo() {
                     height={28}
                     alt="Logo"
                 />
-                <Text variant="h1" className="ml-[1.6rem] hidden md:block">STEMPS</Text>
+                <Text variant="h1" className="ml-[1.6rem] hidden md:block">
+                    STEMPS
+                </Text>
             </span>
         </AppLink>
     );

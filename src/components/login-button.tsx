@@ -9,7 +9,12 @@ export default function LoginButton() {
             alt="Вход"
             className="group"
         >
-            <Text variant="small" className="group-hover:text-primary duration-200">Вход</Text>
+            <Text
+                variant="small"
+                className="duration-200 group-hover:text-primary"
+            >
+                Вход
+            </Text>
         </Button>
     );
 }

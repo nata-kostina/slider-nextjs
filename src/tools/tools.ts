@@ -1,4 +1,7 @@
-export const cl = (arr: string[], cond_obj?: Record<string, boolean>): string => {
+export const cl = (
+    arr: string[],
+    cond_obj?: Record<string, boolean>
+): string => {
     let result = arr.join(" ");
     if (cond_obj) {
         Object.keys(cond_obj).forEach((k) => {

@@ -35,7 +35,9 @@ export default function Slider({ items }: Readonly<Props>) {
                     ref={swiperRef}
                     slidesPerView={"auto"}
                     spaceBetween={16}
-                    onSlideChange={(swiper) => setActiveIndex(swiper.activeIndex)}
+                    onSlideChange={(swiper) =>
+                        setActiveIndex(swiper.activeIndex)
+                    }
                     onSwiper={() => setLoaded(true)}
                     style={{ overflow: "visible" }}
                     grabCursor={true}

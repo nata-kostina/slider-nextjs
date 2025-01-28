@@ -39,7 +39,9 @@ export default function Nav({ nav }: Readonly<Props>) {
                 </Button>
                 <div
                     className={cl(
-                        ["transition-slide fixed left-0 top-0 w-full rounded-b-[0.8rem] bg-white shadow-lg"],
+                        [
+                            "transition-slide fixed left-0 top-0 w-full rounded-b-[0.8rem] bg-white shadow-lg"
+                        ],
                         {
                             "opacity-1 pointer-events-auto translate-y-0":
                                 isNavOpen,
@@ -58,8 +60,17 @@ export default function Nav({ nav }: Readonly<Props>) {
                         </Button>
                         <nav className="flex flex-col items-center gap-[1.6rem]">
                             {nav.map((el) => (
-                                <AppLink key={el.text} hrefTo={el.link} variant="primary">
-                                    <Text variant="small" dangerouslySetInnerHTML={{ __html: el.text }} />
+                                <AppLink
+                                    key={el.text}
+                                    hrefTo={el.link}
+                                    variant="primary"
+                                >
+                                    <Text
+                                        variant="small"
+                                        dangerouslySetInnerHTML={{
+                                            __html: el.text
+                                        }}
+                                    />
                                 </AppLink>
                             ))}
                             <LoginButton />
@@ -72,8 +83,17 @@ export default function Nav({ nav }: Readonly<Props>) {
                 <nav className="flex justify-between">
                     <div className="flex md:gap-[2.4rem]">
                         {nav.map((el) => (
-                            <AppLink key={el.text} hrefTo={el.link} variant="primary">
-                                <Text variant="small" dangerouslySetInnerHTML={{ __html: el.text }} />
+                            <AppLink
+                                key={el.text}
+                                hrefTo={el.link}
+                                variant="primary"
+                            >
+                                <Text
+                                    variant="small"
+                                    dangerouslySetInnerHTML={{
+                                        __html: el.text
+                                    }}
+                                />
                             </AppLink>
                         ))}
                     </div>

@@ -24,7 +24,7 @@ const eslintConfig = [
             "no-console": "warn",
             "react/jsx-indent": [2, 4],
             "react/jsx-indent-props": [2, 4],
-            "quotes": ["error", "double"],
+            quotes: ["error", "double"],
             "jsx-quotes": [2, "prefer-double"],
             "comma-dangle": ["error", "never"],
             "import/no-unresolved": "off",
@@ -42,9 +42,9 @@ const eslintConfig = [
             "@typescript-eslint/no-unused-vars": [
                 "error",
                 {
-                    "argsIgnorePattern": "^_",
-                    "varsIgnorePattern": "^_",
-                    "caughtErrorsIgnorePattern": "^_"
+                    argsIgnorePattern: "^_",
+                    varsIgnorePattern: "^_",
+                    caughtErrorsIgnorePattern: "^_"
                 }
             ],
             "react/require-default-props": "off",
@@ -58,13 +58,13 @@ const eslintConfig = [
             "react/jsx-wrap-multilines": [
                 "error",
                 {
-                    "declaration": "parens-new-line",
-                    "assignment": "parens-new-line",
-                    "return": "parens-new-line",
-                    "arrow": "parens-new-line",
-                    "condition": "parens-new-line",
-                    "logical": "parens-new-line",
-                    "prop": "parens-new-line"
+                    declaration: "parens-new-line",
+                    assignment: "parens-new-line",
+                    return: "parens-new-line",
+                    arrow: "parens-new-line",
+                    condition: "parens-new-line",
+                    logical: "parens-new-line",
+                    prop: "parens-new-line"
                 }
             ],
             "max-len": ["error", { ignoreComments: true, code: 150 }],
@@ -74,30 +74,33 @@ const eslintConfig = [
             "react-hooks/exhaustive-deps": "error",
             "no-param-reassign": "off",
             "no-undef": "off",
-            "object-curly-newline": ["error", { "consistent": true }],
+            "object-curly-newline": ["error", { consistent: true }],
             "react/jsx-max-props-per-line": [
                 "error",
                 {
-                    "maximum": 1,
-                    "when": "multiline"
+                    maximum: 1,
+                    when: "multiline"
                 }
             ],
             "react/jsx-props-no-multi-spaces": "error",
             "react/jsx-tag-spacing": [
                 "error",
                 {
-                    "beforeSelfClosing": "always",
-                    "afterOpening": "never",
-                    "beforeClosing": "proportional-always",
-                    "closingSlash": "never"
+                    beforeSelfClosing: "always",
+                    afterOpening: "never",
+                    beforeClosing: "proportional-always",
+                    closingSlash: "never"
                 }
             ],
             "react/no-array-index-key": "warn",
             "@typescript-eslint/ban-ts-comment": "off",
             "@stylistic/ts/semi": ["error", "always"],
             "@stylistic/ts/member-delimiter-style": ["error"],
-            "no-multiple-empty-lines": ["error", { "max": 1, "maxBOF": 0, "maxEOF": 0 }],
-            "react/jsx-newline": [2, { "prevent": true, "allowMultilines": false }]
+            "no-multiple-empty-lines": [
+                "error",
+                { max: 1, maxBOF: 0, maxEOF: 0 }
+            ],
+            "react/jsx-newline": [2, { prevent: true, allowMultilines: false }]
         }
     }
 ];

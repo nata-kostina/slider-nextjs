@@ -10,7 +10,8 @@ interface Props extends React.ButtonHTMLAttributes<HTMLButtonElement> {
 }
 
 const styles: Record<Variant, string> = {
-    primary: "bg-black text-white hover:text-primary transition-colors duration-100 rounded-[0.4rem] py-[0.4rem] px-[0.8rem]",
+    primary:
+        "bg-black text-white hover:text-primary transition-colors duration-100 rounded-[0.4rem] py-[0.4rem] px-[0.8rem]",
     default: ""
 };
 
@@ -25,7 +26,10 @@ export default function Button({
     const twClasses = styles[variant ?? "default"];
     return (
         <button
-            className={cl([`flex shrink-0 items-center focus:outline-none ${twClasses}`, className ?? ""])}
+            className={cl([
+                `flex shrink-0 items-center focus:outline-none ${twClasses}`,
+                className ?? ""
+            ])}
             {...props}
         >
             {children}
