@@ -1,36 +1,81 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Слайдер
 
-## Getting Started
+Данное приложение представляет собой адаптивный анимированный слайдер с пагинацией.
 
-First, run the development server:
+## Демо
+[Ссылка на деплой]()
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+## Ресурсы
+
+- [Задание](https://docs.google.com/document/d/1aMGGRthkRc-Iqi-eWO4CjpWGWmRHziGI/edit)
+- [Макет](https://www.figma.com/design/iT7HR5aCVFx53TIsp8yKXY/%D0%A2%D0%B5%D1%81%D1%82%D0%BE%D0%B2%D0%BE%D0%B5-%D0%B7%D0%B0%D0%B4%D0%B0%D0%BD%D0%B8%D0%B5-IND?node-id=1-2806&t=nZRaA0FvulmsFP2X-1)
+
+## Использованные технологии
+
+- [Next.js](https://nextjs.org/) 15.1.6
+- [TailwindCSS](https://tailwindcss.com/) ^3.4.1
+- [Typescript](https://www.typescriptlang.org/) ^5
+- [Swiper](https://swiperjs.com/) ^11.2.1
+- [Prettier](https://prettier.io/)
+- [Eslint](https://eslint.org/)
+
+## Структура проекта
+
 ```
+├── public                      # Публично доступные файлы
+│   ├── fonts
+│   └── images
+│
+├── src                        
+│   ├── app                     # Роутинг и страницы
+│   ├── components              # Переиспользуемые компоненты
+│   ├── data                    # Статичные данные
+│   ├── layouts                 # Лэйауты для обертки контента (например, хедер, футер)
+│   ├── sections                # Секции страниц (например, услуги, описание)
+│   ├── tools                   # Утилиты и вспомогательные функции
+│   ├── ui                      # Элементы интерфейса (например, кнопки, ссылки)
+│   └── vectors                 # SVG-элементы
+│
+├── <config_files>              # Конфигурационные файлы (например, для ESLint, Prettier, Tailwind, TypeScript)
+.
+.
+.
+```
+## Тестирование на устройствах
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Это приложение было протестировано на следующих устройствах и разрешениях экрана:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+### Мобильные устройства:
+- iPhone 12 (iOS 15.0) — Safari
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### Десктопы:
+- Windows 11 Professionnel — Chrome
 
-## Learn More
+### Разрешения экрана:
+- 320px (мобильные устройства)
+- 1024px+ (десктопы)
 
-To learn more about Next.js, take a look at the following resources:
+## Локальный запуск проекта
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+1. Склонировать репозиторий
+```
+git clone https://github.com/nata-kostina/slider-nextjs.git
+```
+2. Запустить проект
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+```
+npm run dev
+```
+3. Открыть [http://localhost:3000](http://localhost:3000) в браузере, чтобы увидеть результат.
 
-## Deploy on Vercel
+## Сборка проекта
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. Склонировать репозиторий
+```
+git clone https://github.com/nata-kostina/slider-nextjs.git
+```
+2. Собрать проект
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+```
+npm run build
+```
