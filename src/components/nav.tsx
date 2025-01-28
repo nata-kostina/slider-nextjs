@@ -5,7 +5,7 @@ import Button from "@/ui/button";
 import AppLink from "@/ui/link";
 import Text from "@/ui/text";
 import Cross from "@/vectors/Cross";
-import { useEffect, useState } from "react";
+import { useCallback, useEffect, useState } from "react";
 import LoginButton from "./login-button";
 
 interface Props {
@@ -21,6 +21,15 @@ export default function Nav({ nav }: Readonly<Props>) {
     const handleCrossClick = () => {
         setIsNavOpen(false);
     };
+    const handleWindowResize = useCallback(() => {
+        setIsNavOpen(false);
+    }, []);
+
+    useEffect(() => {
+        window.addEventListener("resize", handleWindowResize);
+        return () => {  window.removeEventListener("resize", handleWindowResize); };
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+    }, []);
 
     useEffect(() => {
         fixWindow(isNavOpen);
