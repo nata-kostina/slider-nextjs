@@ -12,9 +12,8 @@ export default function Slide({
     return (
         <div
             className={
-                "mr-[1.6rem] grid aspect-[1.7] w-full max-w-[35.8rem] grid-cols-[auto_1fr] content-between items-center " +
-                "gap-x-[2.4rem] rounded-[0.8rem] bg-gray p-[1.6rem] md:aspect-auto md:h-[25.6rem] md:w-[41.2rem] md:max-w-[41.2rem]" +
-                "md:grid-cols-[1fr] md:p-[2.4rem]"
+                // eslint-disable-next-line max-len
+                "mr-[1.6rem] grid aspect-[1.7] w-full max-w-[35.8rem] grid-cols-[auto_1fr] content-between items-center gap-x-[2.4rem] rounded-[0.8rem] bg-gray p-[1.6rem] md:aspect-auto md:h-[25.6rem] md:w-[41.2rem] md:max-w-[41.2rem] md:grid-cols-[1fr] md:p-[2.4rem]"
             }
         >
             <Image

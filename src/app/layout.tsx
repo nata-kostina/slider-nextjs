@@ -19,11 +19,7 @@ export default function RootLayout({
     return (
         <html lang="ru">
             <body
-                className={
-                    `${PPNeueMontreal.className} touch-action-pan-x touch-action-pan-y tap-highlight-transparent ` +
-                    "hide-scrollbar-ms hide-scrollbar-firefox font-synthesis-none text-rendering-legibility webkit-font-smoothing select-none" +
-                    "moz-osx-font-smoothing webkit-text-size-adjust scroll-smooth bg-bg text-black antialiased"
-                }
+                className={`${PPNeueMontreal.className} touch-action-pan-x touch-action-pan-y tap-highlight-transparent hide-scrollbar-ms hide-scrollbar-firefox font-synthesis-none text-rendering-legibility webkit-font-smoothing select-none moz-osx-font-smoothing webkit-text-size-adjust scroll-smooth bg-bg text-black antialiased`}
             >
                 {children}
             </body>
